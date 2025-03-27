@@ -1,7 +1,4 @@
- /* --------------------------------------------------
-       CSS Variables & Global Settings
-    --------------------------------------------------- */
-    :root {
+  :root {
       --primary: #4F46E5;       /* Indigo-600 */
       --primary-hover: #4338CA;  /* Indigo-700 */
       --secondary: #1F2937;      /* Gray-800 */
