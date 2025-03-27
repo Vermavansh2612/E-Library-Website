@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Library Website</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="assets/logo.png" alt="E-Library Website Logo" class="logo"/>
+        <span class="logo-text">E-Library Website</span>
+      </div>
+      <nav class="desktop-nav" role="navigation">
+        <a href="#" class="nav-link" data-action="home">Home</a>
+        <div class="dropdown">
+          <button class="nav-link" id="categories-toggle">Categories</button>
+          <div class="dropdown-menu" id="categories-menu">
+            <a href="#" class="dropdown-item active">All</a>
+            <a href="#" class="dropdown-item">Self-Improvement</a>
+            <a href="#" class="dropdown-item">Technology</a>
+            <a href="#" class="dropdown-item">Fiction</a>
+            <a href="#" class="dropdown-item">Health & Fitness</a>
+            <a href="#" class="dropdown-item">Numerology</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link" data-action="popular">Most Popular</a>
+        <a href="#" class="nav-link" data-action="latest">Latest</a>
+        <a href="#" class="nav-link" data-action="contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Mobile Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#" class="mobile-nav-link" data-action="home">Home</a>
+      <div class="mobile-dropdown">
+        <button class="mobile-nav-link" id="mobile-categories-toggle">Categories</button>
+        <div class="mobile-dropdown-menu" id="mobile-categories-menu">
+          <a href="#" class="mobile-dropdown-item active">All</a>
+          <a href="#" class="mobile-dropdown-item">Self-Improvement</a>
+          <a href="#" class="mobile-dropdown-item">Technology</a>
+          <a href="#" class="mobile-dropdown-item">Mystery</a>
+          <a href="#" class="mobile-dropdown-item">Health & Fitness</a>
+          <a href="#" class="mobile-dropdown-item">Research</a>
+        </div>
+      </div>
+      <a href="#" class="mobile-nav-link" data-action="popular">Most Popular</a>
+      <a href="#" class="mobile-nav-link" data-action="latest">Latest</a>
+      <a href="#" class="mobile-nav-link" data-action="contact">Contact</a>
+    </div>
+  </header>
+  
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <div class="search-container">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for PDF books..." aria-label="Search Books"/>
+        <button id="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    <h2 class="section-title">Featured Books</h2>
+    <div class="book-grid" id="book-list">
+      <!-- Books will be loaded dynamically here -->
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <p class="footer-text">© 2025 Vansh's E-Library Website. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Vermavansh2612/" class="social-link" aria-label="Github" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/dude_itzvansh/" class="social-link" aria-label="Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vansh-verma-185801275/" class="social-link" aria-label="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/script.js">
+  </script>
+</body>
+</html>
